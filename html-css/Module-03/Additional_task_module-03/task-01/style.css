@@ -1,0 +1,36 @@
+#navbar {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+
+  #navbar li { display: inline; 
+margin-right: 100px;
+text-transform: uppercase;
+}
+#navbar li :last-child {
+    margin-right: 0;
+
+}
+  
+  #navbar a {
+    /* background-color: #ffffff; */
+    color: #8c8989;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: normal;
+  }
+  /* #navbar li {
+    border-left: 10px;
+    border-bottom: 1px;
+  } */
+  #navbar a:hover {
+   color: blue;
+  }
+  .wrapper {
+    box-sizing: border-box;
+    width: 1200px;
+    margin: auto;
+    background-color: transparent;
+  }
