@@ -8,7 +8,7 @@ html {
 ::before,
 ::after {
   box-sizing: inherit;
-}   
+}
 
 * {
   margin: 0px;
@@ -21,7 +21,7 @@ body {
 }
 
 .card {
-  
+
   width: 420px;
 
 
@@ -29,14 +29,14 @@ body {
   vertical-align: top;
   letter-spacing: 0;
   margin-bottom: 140px;
-  
+
 }
 
 .card > img {
   margin-bottom: 20px;
 }
 .nav-list {
-  text-align: center; 
+  text-align: center;
 }
 
 .nav-link {
@@ -47,25 +47,29 @@ body {
 }
 
 .nav-item {
-  display: inline-block; 
-  vertical-align: middle; 
+  display: inline-block;
+  vertical-align: middle;
   text-transform: uppercase;
 }
-.nav-item + .nav-item {
-  padding-left: 115px; 
+li:not(:last-child) {
+ margin-right: 115px;
+
 }
 
+
+
 .container :hover {
-  color: blue;
+  color: #03a9f4;
 }
 
 .category {
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
-  font-weight: lighter;
+  font-weight: 300;
   color: #b4ad9e;
   text-transform: uppercase;
   margin-bottom: 40px;
+
 }
 h2 {
   font-family: "Playfair Display", serif;
@@ -94,6 +98,9 @@ h2 {
   text-align: center;
   width: 164px;
   height: 60px;
+}
+.button {
+  padding-bottom: 70px;
 }
 
 .card-block {
