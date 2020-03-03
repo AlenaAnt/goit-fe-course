@@ -30,6 +30,7 @@ body {
   letter-spacing: 0;
   margin-bottom: 140px;
 
+
 }
 
 .card > img {
@@ -103,14 +104,17 @@ h2 {
   padding-bottom: 70px;
 }
 
-.card-block {
+.cards {
 
   font-size: 0px;
   box-sizing: border-box;
 }
-.card-block>.card:first-child {
-  margin-right: 60px;
+.cards>.card:nth-child(even) {
+  margin-left: 60px;
 }
+
+
+
 
 main {
   margin: auto;
