@@ -1,5 +1,7 @@
-html {
+* {
   box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 *,
 ::before,
@@ -7,9 +9,8 @@ html {
   box-sizing: inherit;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
+li, ol {
+list-style: none;
 }
 
 
@@ -30,7 +31,7 @@ li:first-child {
   font-family: "Roboto", sans-serif;
   font-family: bold;
 }
-.container {
+ .container {
 
   font-family: "Roboto", sans-serif;
   color: #0f0101;
@@ -52,8 +53,14 @@ li:first-child {
   color: #555252;
   float: left;
   height: 60px;
-  padding-top: 40px;
- padding-left: 260px;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  vertical-align: bottom;
+
+  padding-left: 35px;
+}
+.logo>a {
+  text-decoration: none;
 }
 .logo::first-letter {
   color: #1abc9c;
@@ -64,9 +71,10 @@ li:first-child {
   color: #1abc9c;
 }
 
-.wrapper {
+ .wrapper {
   margin: 0 auto;
-  max-width: 1170px;
+  max-width: 1140px;
+  padding: 0 15px;
 }
 
 
@@ -75,3 +83,78 @@ li:first-child {
   clear: both;
   display: table;
 }
+.catalog {
+  text-transform: uppercase;
+  font-size: 48px;
+  font-family: "Roboto" black, sans-serif;
+  color:#515151;
+ text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+
+}
+.pic {
+  background-color: #1abc9c ;
+  display: block;
+  height: 7px;
+  width:165px ;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-list {
+  margin:  0 -15px;
+overflow: hidden;
+}
+.card-item  {
+float: left;
+padding: 0 15px;
+margin-bottom: 30px;
+width: 25%;
+}
+.card-img {
+background: #e9f0fd;
+height: 280px;
+position: relative;
+}
+.card img img {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform;: translate(-50%, -50%);
+}
+.card-footer {
+  overflow: hidden;
+  color: #fff;
+background: #323232;
+}
+.card-name {
+text-transform: uppercase;
+}
+.card-price {
+  float: right;
+background-color: rgba(255,255,255,.5);
+}
+img {
+  vertical-align: top;
+  height: auto;
+  max-width: 100%;
+}
+.card-item:hover .card-footer {
+  background: #1abc9c;
+}
+/* нужно обернуть ссылку в .card и перенести туда стили из .card-item (оставить его пустым)  */
+/* .container2 {
+  max-width: 1140px;
+  margin: 0 auto;
+
+}
+.wrapper {
+  margin: 0 auto;
+
+  padding: 0 15px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}              должно быть так
+Заголовок можно обернуть в хедер, хедеров может быть много на странице*/

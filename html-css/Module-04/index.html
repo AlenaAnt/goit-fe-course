@@ -8,11 +8,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Roboto:wght@300;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <wrapper >
+    <div class="wrapper ">
 
-    <header class="header">
-        <div class="logo clearfix">mart</div>
-        <div class="container clearfix ">
+    <header class="header clearfix">
+        <div class="logo"><a href="#">mart</a></div>
+        <div class="container">
           <nav id="nav">
 
             <ul class="nav-list">
@@ -38,22 +38,58 @@
           </nav>
         </div>
       </header>
-      <section>
-        <h2>Featured Products</h2>
-        <ul>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
+      <section class="cards">
+        <h2 class="catalog">Featured Products</h2>
+        <div class="pic"></div>
+        <div class="container2"> <!-- общий один для всех блоков от края до края дизайна : в нем ширина, отступы и все-->
+           <div class="card-list"><!--для всех товаров  -->
+            <div class="card-item"> <!-- на каждый товар должно быть ссылкой в классе card -->
+               <div class="card-img"><!--картинка  -->
+                <img src="img/Безимени-5.png" alt="">
+              </div>
+                 <div class="card-footer"> <!--наименование+цена -->
+                  <span class="card-name">Blue Tshirt</span>
+                  <span class="card-price">$26</span>
+                </div>
+
+              </div>
+              <div class="card-item"> <!-- на каждый товар -->
+                <div class="card-img"><!--картинка  -->
+                 <img src="img/Безимени-5.png" alt="">
+               </div>
+                  <div class="card-footer"> <!--наименование+цена -->
+                   <span class="card-name">Blue Tshirt</span>
+                   <span class="card-price">$26</span>
+                 </div>
+
+               </div>
+               <div class="card-item"> <!-- на каждый товар -->
+                <div class="card-img"><!--картинка  -->
+                 <img src="img/Безимени-5.png" alt="">
+               </div>
+                  <div class="card-footer"> <!--наименование+цена -->
+                   <span class="card-name">Blue Tshirt</span>
+                   <span class="card-price">$26</span>
+                 </div>
+
+               </div>
+        </div>
+        <div class="card-item"> <!-- на каждый товар -->
+          <div class="card-img"><!--картинка  -->
+           <img src="img/Безимени-5.png" alt="">
+         </div>
+            <div class="card-footer"> <!--наименование+цена -->
+             <span class="card-name">Blue Tshirt</span>
+             <span class="card-price">$26</span>
+           </div>
+
+         </div>
+        </div>>
+
       </section>
 
       </div>
 
-    </wrapper >
+    </div>
 </body>
 </html>
