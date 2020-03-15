@@ -9,7 +9,9 @@
 li , ol {
 list-style: none;
 }
-
+#nav {
+  float: right;
+}
 
 .nav-list li {
   float: right;
@@ -18,25 +20,18 @@ list-style: none;
   padding-top: 30px;
 }
 li:first-child {
-  margin-right: 30px;
+  margin-right: 0px;
 }
 
 .nav-link {
   text-decoration: none;
 
   color: #0f0101;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-}
- .container {
-  font-family: "Roboto", sans-serif;
+  font-size: 14px;
   font-weight: 600;
-  color: #0f0101;
-  text-transform: uppercase;
-  font-size: 11px;
-
-  float: right;
-  }
+}
 
 .nav-item {
   vertical-align: middle;
@@ -53,8 +48,6 @@ li:first-child {
   margin-bottom: 10px;
   margin-top: 20px;
   vertical-align: bottom;
-
-  padding-left: 35px;
   color: #555252;
 }
 .logo-link {
@@ -90,7 +83,7 @@ li:first-child {
   font-weight: 900 ;
   color:#515151;
  text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 
 }
 .cards {
@@ -147,6 +140,7 @@ font-family: 'Roboto', sans-serif;
    color: #ffffff;
    font-size: 18px;
 text-align: center;
+width: 55px;
 }
 img {
 /* vertical-align: top; */
@@ -174,7 +168,6 @@ img {
 
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 90px;
   margin-top: 35px;
 }
 
@@ -192,17 +185,22 @@ color: inherit;
 
  .block {
     float: left;
-    width: 33.333%;
-    padding: 0 15px;
+    width: 350px;
     margin-bottom: 80px;
+    margin-right: 30px;
     display: block;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
    color: #555252;
    text-align: justify;
-
   }
+  .block:last-child {
+    margin-right: 0px;
+  }
+.block p {
+  font-size: 14px;
 
+}
 .block-title {
 
   font-size: 18px;
@@ -214,9 +212,12 @@ color: inherit;
   margin-top: 20px;
   vertical-align: bottom;
 
-  padding-left: 35px;
-  text-decoration: none;
+  margin-bottom: 20px;
 
+}
+.block-title-link {
+  text-decoration: none;
+  color: inherit;
 }
 .block-title::after {
   content: "";
@@ -227,15 +228,19 @@ color: inherit;
 
   margin-left: 0;
   margin-right: auto;
-  margin-bottom: 30px;
-  margin-top: 15px;
+
+  margin-top: 10px;
 }
+
 .block-img {
   margin-bottom: 20px;
 }
 
 
-.btn {
+.btn-link {
+  display: inline-block;
+  text-decoration: none;
+  line-height: 50px;
   font-size: 16px;
   font-family:  'Open Sans', sans-serif;
   font-weight: 300;
@@ -248,11 +253,4 @@ color: inherit;
   margin-left: 0;
   margin-right: auto;
   text-align: center;
-
-}
-.btn-link {
-  display: inline-block;
-  text-decoration: none;
-  color:inherit;
-  line-height: 50px;
 }
