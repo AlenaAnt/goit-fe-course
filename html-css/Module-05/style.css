@@ -106,43 +106,57 @@ ol {
 }
 
 .slaider {
+  background-position: center;
+  background-size: cover;
   height: 600px;
-  background-image: url(img/one.png);
-
+  position: relative;
 
 }
-
-/* filter: brightness(0.5); */
-.slaider-body::after {
+.slaider:before {
   content: "";
-  background-color: rgb(78, 198, 171);
-  opacity: 0.651;
   position: absolute;
-  left: ;
-  top: ;
-  width: 104px;
-  height: 104px;
-  z-index: 79;
-  left: 100%;
-  top: 50%;
-  transform: translate(-0%, -50%);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, .52);
 }
 
-.slaider-body::before {
-  content: "";
+.left {
+  border:none;
   background-color: rgb(26, 188, 156);
   opacity: 0.651;
   position: absolute;
-  left: ;
-  top: ;
+
   width: 104px;
   height: 104px;
-  z-index: 83;
-  right: 100%;
+
+  top: 50%;
+  transform: translate(-0%, -50%);
+  font-size: 100px;
+  color: #ffffff;
+}
+
+.right {
+
+  border:none;
+  background-color: rgb(78, 198, 171);
+  opacity: 0.651;
+  position: absolute;
+
+  width: 104px;
+  height: 104px;
+  left: 90%;
   top: 50%;
   transform: translate(-0%, -50%);
 
+  font-size: 100px;
+color: #ffffff;
 }
+
+
+
+
 .container-products {
   height: 580px;
   background-color: #e9f0fd;
@@ -187,7 +201,7 @@ padding-top: 100px;
 
 .product {
   font-family: 'Roboto', sans-serif;
-  font-style: 300;
+  font-weight: 300;
   font-size: 24px;
   text-transform: uppercase;
   color: #ffffff;
@@ -255,19 +269,21 @@ padding-top: 100px;
   height: 261px;
   background-color: rgb(0, 0, 0);
   position: absolute;
-  opacity: 0;
+
   margin: 12px 10px 12px 10px;
   color: #ffffff;
 }
-/* .product:hover .overlay { */
-  .product .overlay {
-  opacity: 0.549;
-  z-index: 25;
+.product:hover .overlay {
+
+  background-color: rgba(0, 0, 0, 0.5 );
+  z-index: 1;
 }
+
 
 
 .overlay .overlay-icon:hover {
   background-color: #1abc9c;
+  opacity: 1;
 }
 .overlay-icons {
   width: 164px;
@@ -276,7 +292,7 @@ padding-top: 100px;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: justify;
-
+  line-height: 56px;
 }
  .overlay-icon {
    display: inline-block;
@@ -288,8 +304,13 @@ padding-top: 100px;
 
    width: 48px;
    height: 48px;
-   z-index: 27;
- }
+
+   cursor: pointer;
+   font-size: 30px;
+color: #ffffff;
+
+}
+
 
 
  .overlay-link {
@@ -308,11 +329,16 @@ font-size: 14px;
 line-height: 32px;
   width: 164px;
   height: 48px;
-  z-index: 39;
+
   text-transform: uppercase;
   color: #ffffff;
- }
-.copyright {
+  cursor: pointer;
+}
+.basket i {
+  font-size: 30px;
+
+}
+.copyrig {
 
   height: 90px;
   background-color: #323232;
@@ -320,4 +346,7 @@ line-height: 32px;
   font-size: 16px;
   text-align: center;
   line-height: 100px;
+}
+.word {
+  color: #46bfa9;
 }
