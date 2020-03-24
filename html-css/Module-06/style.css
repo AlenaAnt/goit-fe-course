@@ -54,23 +54,28 @@ ol {
   font-size: 14px;
   transition: color 200ms linear;
   position: relative;
+  padding-bottom: 15px;
+}
+.nav-link::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 0%;
+  background-color: #f38181;
+  transition: all 200ms linear;
+  bottom: 0;
 }
 
 .nav-link:hover,
 .nav-link:focus {
   color: #f38181;
   font-weight: 900;
+
 }
 
 .nav-link:hover::after {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 3px;
   width: 100%;
-  background-color: #f38181;
-  transition: all 200ms linear;
-  margin-top: 12px;
 }
 
 .nav-list li {
