@@ -39,31 +39,43 @@ ol {
 
 .nav-item {
 }
-
-.nav-link:hover {
-  color: #f38181;
-  text-decoration: underline;
-  font-weight: 900;
-  animation: rotor-right 200ms linear;
-}
 .nav-list {
   display: flex;
   justify-content: space-between;
   width: 490px;
 }
-.nav-list li {
-  display: flex;
-  list-style: none;
-}
 
 .nav-link {
   text-decoration: none;
-
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   color: #95e1d3;
   text-transform: uppercase;
   font-size: 14px;
+  transition: color 200ms linear;
+  position: relative;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #f38181;
+  font-weight: 900;
+}
+
+.nav-link:hover::after {
+  display: block;
+  position: absolute;
+  content: "";
+  height: 3px;
+  width: 100%;
+  background-color: #f38181;
+  transition: all 200ms linear;
+  margin-top: 12px;
+}
+
+.nav-list li {
+  display: flex;
+  list-style: none;
 }
 
 .nav-item {
@@ -84,7 +96,6 @@ h3 {
   font-size: 30px;
   text-transform: uppercase;
   text-align: center;
-
 }
 h4 {
   font-family: "Montserrat", sans-serif;
@@ -119,17 +130,16 @@ h4 {
 
 .card-link {
   font-family: "Roboto", sans-serif;
-  font-weight: 380;
+  /* font-weight: 380; */
   font-size: 15px;
   flex-basis: 400px;
   flex-grow: 0;
   flex-shrink: 0;
   display: flex;
- text-align: left;
+  text-align: left;
   margin-bottom: 105px;
   padding: 0 10px;
 }
-
 
 .head {
 }
@@ -146,22 +156,24 @@ h4 {
   align-content: space-between;
 }
 .cards-team p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-style : italic;
-
+  font-style: italic;
 }
 .cards-team {
   display: flex;
   justify-content: space-between;
 }
-.card-img {
-  margin-right: 30px;
+.card-team + .card-team {
+  margin-left: 30px;
 }
 
 .card-img-team {
-
-margin-bottom: 35px;
+  position: relative;
+  margin-bottom: 35px;
+  height: 470px;
+  width: 380px;
+  transition: all 200ms linear;
 }
 .name-team {
   text-align: center;
@@ -173,28 +185,90 @@ margin-bottom: 35px;
   text-align: left;
   text-decoration: underline;
   line-height: 60px;
+  text-decoration: none;
 }
 .word {
- color: #f38181;
+  color: #f38181;
 }
 
 .container-footer {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+}
+.card-img {
+  margin-right: 30px;
+}
+.btn {
+  height: 40px;
+  width: 380px;
+  display: flex;
+}
+.btn input[type="email"] {
+  padding: 10px;
 }
 
+.email {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 15px;
+  width: 230px;
+  height: 40px;
+  color: #cccccc;
+}
 
+.subscribe {
+  background-color: #95e1d3;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 150px;
+  height: 40px;
+  border: none;
+}
 
-
-
-
-.Rectangle_14 {
-  background-image: -moz-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba(252, 227, 138, 0.651) 0%,
+    rgba(243, 129, 129, 0.651) 100%);
   position: absolute;
-  left: 350px;
-  top: 970px;
-  width: 380px;
-  height: 470px;
-  z-index: 19;
+  border-left: 10px;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-img-team:hover .overlay {
+  opacity: 1;
+}
+.card-img-team:hover {
+  transform: translate(-10px, -10px);
+  box-shadow: 10px 10px 0px 0px #95e1d3;
+}
+
+.overlay .overlay-icon:hover {
+  background-color: #1abc9c;
+  opacity: 1;
+}
+.overlay-icons {
+  display: flex;
+}
+.overlay-icon {
+  display: flex;
+  background-color: #fce38a;
+  cursor: pointer;
+  margin: 0.5px;
+  border: none;
+  border-color: transparent;
+  transition: all 200ms linear;
+}
+
+.overlay-link {
+  text-decoration: none;
 }
