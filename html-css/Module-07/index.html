@@ -8,8 +8,8 @@
   </head>
   <body>
     <div class="wrapper">
-      <div class="container">
-        <header>
+      <header class="header">
+        <div class="container">
           <div class="page-nav">
             <div class="logo">
               Golden
@@ -22,8 +22,8 @@
               <li><a href="#" class="nav-link">contact</a></li>
             </ul>
           </div>
-        </header>
-      </div>
+        </div>
+      </header>
 
       <main>
         <section class="services">
@@ -71,36 +71,43 @@
         </section>
         <section class="contactus">
           <div class="container">
-            <div class="head-contactus">
-              <h2>Contact us</h2>
-              <p>Proin iaculis purus consequat sem cure.</p>
-            </div>
-          </div>
-          <div class="container">
-            <div class="form">
-              <form action="#" method="get">
-                <div class="info">
-                  <input
-                    type="text"
-                    name="your Name"
-                    placeholder="your Name *"
-                  />
-                  <input
-                    type="text"
-                    name="your e-mail"
-                    placeholder="your e-mail *"
-                  />
-
-                  <input type="text" value="subject" />
+            <header>
+              <div class="head-contactus">
+                <h2>Contact us</h2>
+                <p>Proin iaculis purus consequat sem cure.</p>
+              </div>
+            </header>
+            <form action="#">
+              <fieldset>
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="text"
+                      placeholder=" Your name*"
+                      required
+                      name="name"
+                    />
+                    <input
+                      type="email"
+                      placeholder="Your email*"
+                      required
+                      name="email"
+                    />
+                    <input type="text" placeholder=" Subject" name="subject" />
+                  </div>
+                  <div class="col">
+                    <textarea
+                      placeholder="Your message*"
+                      required
+                      name="message"
+                    ></textarea>
+                  </div>
                 </div>
-                <textarea name="message" placeholder="For message">
-                  Your message *
-                </textarea>
-              </form>
-
-              <button class="btn">Send Message</button>
-
-            </div>
+                <div class="btn-box">
+                  <button type="submit">send message</button>
+                </div>
+              </fieldset>
+            </form>
           </div>
         </section>
       </main>

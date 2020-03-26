@@ -1,100 +1,108 @@
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-  }
-  .wrapper {
-    overflow: hidden;
-    position: relative;
-  }
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
 
 /* montserrat-regular - latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
 
-  src: local('Montserrat Regular'), local('Montserrat-Regular'),
-
-       url('fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
-
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("fonts/montserrat-v14-latin/montserrat-v14-latin-regular.woff")
+      format("woff"); /* Modern Browsers */
 }
 /* montserrat-900 - latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
 
-  src: local('Montserrat Black'), local('Montserrat-Black'),
-       url('fonts/montserrat-v14-latin//montserrat-v14-latin-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('fonts/montserrat-v14-latin//montserrat-v14-latin-900.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/montserrat-v14-latin/montserrat-v14-latin-900.woff') format('woff'), /* Modern Browsers */
-       url('fonts/montserrat-v14-latin/montserrat-v14-latin-900.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('fonts/montserrat-v14-latin/montserrat-v14-latin-900.svg#Montserrat') format('svg'); /* Legacy iOS */
+  src: local("Montserrat Black"), local("Montserrat-Black"),
+    url("fonts/montserrat-v14-latin//montserrat-v14-latin-900.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */
+      url("fonts/montserrat-v14-latin//montserrat-v14-latin-900.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("fonts/montserrat-v14-latin/montserrat-v14-latin-900.woff")
+      format("woff"),
+    /* Modern Browsers */
+      url("fonts/montserrat-v14-latin/montserrat-v14-latin-900.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("fonts/montserrat-v14-latin/montserrat-v14-latin-900.svg#Montserrat")
+      format("svg"); /* Legacy iOS */
 }
 
 /* roboto-slab-regular - latin */
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
-  src: local(''),
-
-       url('fonts/roboto-slab-v11-latin/roboto-slab-v11-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('fonts/roboto-slab-v11-latin/roboto-slab-v11-latin-regular.woff') format('woff'); /* Modern Browsers */
-
+  src: local(""),
+    url("fonts/roboto-slab-v11-latin/roboto-slab-v11-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */
+      url("fonts/roboto-slab-v11-latin/roboto-slab-v11-latin-regular.woff")
+      format("woff"); /* Modern Browsers */
 }
 @font-face {
   font-family: "DroidSerifItalic";
   src: url("fonts/DroidSerif/DroidSerifItalic.eot");
-  src: url("fonts/DroidSerif/DroidSerifItalic.eot?#iefix")format("embedded-opentype"),
-  url("fonts/DroidSerif/DroidSerifItalic.woff") format("woff");
+  src: url("fonts/DroidSerif/DroidSerifItalic.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/DroidSerif/DroidSerifItalic.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
-
 
 @font-face {
   font-family: "WisdomScriptAJ";
   src: url("fonts/WisdomScriptAJ/WisdomScriptAJ.woff") format("woff"),
-  url('fonts/WisdomScriptAJ/WisdomScriptAJ.ttf') format('truetype');
+    url("fonts/WisdomScriptAJ/WisdomScriptAJ.ttf") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
-
 
 li,
 ol {
   list-style: none;
 }
 .container {
-max-width: 940px;
-margin: 0 auto;
-
-
+  max-width: 940px;
+  margin: 0 auto;
 }
-
+.header {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
 .page-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 130px;
-  line-height: 41px;
+
+  line-height: 1.2;
   align-items: baseline;
 }
 
-
 .logo {
-  font-family: 'WisdomScriptAJ';
+  font-family: "WisdomScriptAJ";
   font-weight: 300;
   font-style: italic;
   font-size: 26px;
   color: #fed136;
   display: flex;
   width: 40%;
-
 }
 .nav-list {
   display: flex;
@@ -102,33 +110,34 @@ margin: 0 auto;
   width: 60%;
 }
 .nav-link {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-weight: 900;
   font-size: 14px;
   text-decoration: none;
   color: #222222;
   display: flex;
   text-transform: uppercase;
-
 }
 .nav-link:hover {
   color: #fed136;
 }
-
-
+section {
+  padding-top: 110px;
+  padding-bottom: 120px;
+}
 .head-services {
   text-align: center;
   margin-bottom: 75px;
 }
 
 .head-services h2 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
   font-size: 40px;
   color: #222222;
- text-transform: uppercase;
- margin-bottom: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .head-services p {
   font-family: "DroidSerifItalic";
@@ -137,7 +146,7 @@ margin: 0 auto;
   color: #777777;
 }
 .card h3 {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
@@ -147,10 +156,10 @@ margin: 0 auto;
 .cards {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 125px;
+
 }
-.card  {
-  font-family: 'Roboto Slab';
+.card {
+  font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -165,17 +174,16 @@ margin: 0 auto;
   width: 72px;
   height: 71px;
   display: block;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card img {
   display: block;
-    width: 50px;
-    height: 50px;
+  width: 50px;
+  height: 50px;
 }
 .contactus {
   background: #222222;
@@ -185,18 +193,18 @@ margin: 0 auto;
 }
 .head-contactus {
   text-align: center;
-    margin-bottom: 75px;
-padding-top: 110px;
+  margin-bottom: 75px;
+  padding-top: 110px;
 }
 
 .head-contactus h2 {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 900;
-font-size: 40px;
-color: #ffffff;
-text-transform: uppercase;
-margin-bottom: 20px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 .head-contactus p {
   font-family: "DroidSerifItalic";
@@ -204,62 +212,85 @@ margin-bottom: 20px;
   font-size: 16px;
   color: #777777;
 }
-.form {
-  text-align: center;
 
+:focus,
+:visited {
+  outline: none;
 }
-form {
-  display: flex;
-  justify-content: space-between;
-
+form,
+fieldset {
+  border-style: none;
+  margin: 0;
+  padding: 0;
 }
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+  height: 55px;
+  padding: 18px 20px;
+  margin-bottom: 25px;
+  line-height: 100%;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
 
-.info input{
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
   text-transform: uppercase;
   color: #bbbbbb;
-  height: 50px;
-  padding: 0;
-  border-radius: 5px;
-  width: 455px;
-
-  margin-bottom: 30px;
 }
-
- .btn {
+input[type="text"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="submit"]::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+textarea {
+  height: 215px;
+  resize: none;
+  overflow: auto;
+  vertical-align: top;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.col {
+  width: 50%;
+  padding: 0 15px;
+}
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea:focus {
+  border-color: blue;
+}
+input:invalid,
+textarea:invalid {
+  border-color: red;
+}
+input:valid,
+textarea:valid {
+  border-color: green;
+}
+.btn-box {
+  text-align: center;
+}
+.btn-box button {
   height: 65px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
-  border-radius: 5px;
+  border-radius: 4px;
   width: 240px;
   text-transform: uppercase;
   background-color: #fed136;
   color: #ffffff;
   border: none;
- }
- .btn {
-   margin-bottom: 115px;
- }
- textarea {
-  width: 455px;
-  height: 210px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 14px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  color: #bbbbbb;
-margin-bottom: 30px;
-}
-
-
-.info {
-  width: 455px;
-
 }
