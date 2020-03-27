@@ -6,6 +6,7 @@
 .wrapper {
   overflow: hidden;
   position: relative;
+  padding: 0 30px;
 }
 .container {
   max-width: 1200px;
@@ -17,13 +18,18 @@ li,
 ol {
   list-style: none;
 }
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .page-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  min-height: 90px;
-  margin-bottom: 90px;
+  padding-top: 30px;
+padding-bottom: 110px;
+  align-items: baseline;
 }
 .logo {
   display: flex;
@@ -70,8 +76,6 @@ ol {
 .nav-link:hover,
 .nav-link:focus {
   color: #f38181;
-  font-weight: 900;
-
 }
 
 .nav-link:hover::after {
@@ -93,9 +97,10 @@ h2 {
   font-weight: 400;
   font-size: 24px;
   text-align: center;
-  margin-bottom: 25px;
+  line-height: 54px;
 }
-h3 {
+.sub-head {
+  margin-top: 25px;
   font-family: "Montserrat", sans-serif;
   font-weight: 900;
   font-size: 30px;
@@ -108,12 +113,17 @@ h4 {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #333333;
 }
+
 .head {
-  margin-top: 110px;
-  margin-bottom: 115px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 65px;
 }
-.head::after {
+.sub-head::after {
   content: "";
   background-color: #f38181;
   display: block;
@@ -123,31 +133,17 @@ h4 {
   margin-right: auto;
   margin-top: 45px;
 }
-.services {
-}
+section {
+    /* padding-top: 90px; */
 
+}
 .cards-link {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  align-content: space-between;
+  justify-content: space-between;
+
 }
 
-.card-link {
-  font-family: "Roboto", sans-serif;
-  /* font-weight: 380; */
-  font-size: 15px;
-  flex-basis: 400px;
-  flex-grow: 0;
-  flex-shrink: 0;
-  display: flex;
-  text-align: left;
-  margin-bottom: 105px;
-  padding: 0 10px;
-}
-
-.head {
-}
 .team {
   margin-bottom: 85px;
 }
@@ -159,6 +155,8 @@ h4 {
   margin-bottom: 100px;
   display: flex;
   align-content: space-between;
+  padding: 0 130px;
+  margin-top: 45px;
 }
 .cards-team p {
   font-family: "Roboto", sans-serif;
@@ -168,7 +166,12 @@ h4 {
 .cards-team {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
+.card-team {
+  width: 380px;
+}
+
 .card-team + .card-team {
   margin-left: 30px;
 }
@@ -176,10 +179,52 @@ h4 {
 .card-img-team {
   position: relative;
   margin-bottom: 35px;
-  height: 470px;
-  width: 380px;
   transition: all 200ms linear;
 }
+.name-serveces {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  width: 380px;
+  text-align: left;
+  margin-bottom: 105px;
+  padding: 0 10px;
+  padding-right: 20px;
+  position: relative;
+  color: #999999;
+  padding-left: 84px;
+}
+
+.name-serveces::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+
+}
+
+.icon-01::before {
+  background-image: url(img/amazin-01-photography.png);
+}
+.icon-02::before {
+  background-image:  url(img/amazin-02-webdesing.png);
+}
+.icon-03::before {
+  background-image: url(img/amazin-03-creativity.png);
+}
+.icon-04::before {
+  background-image: url(img/amazin-04-seo.png);
+}
+.icon-05::before {
+  background-image: url(img/amazin-05-csshtml.png);
+}
+
+.icon-06::before {
+  background-image: url(img/amazin-06-digital.png);
+}
+
 .name-team {
   text-align: center;
 }
@@ -194,6 +239,7 @@ h4 {
 }
 .word {
   color: #f38181;
+  text-decoration: none;
 }
 
 .container-footer {
@@ -202,9 +248,7 @@ h4 {
   align-items: center;
   border-top: 1px solid #e5e5e5;
 }
-.card-img {
-  margin-right: 30px;
-}
+
 .btn {
   height: 40px;
   width: 380px;
@@ -221,7 +265,8 @@ h4 {
   font-size: 15px;
   width: 230px;
   height: 40px;
-  color: #cccccc;
+  color: #000000;
+  outline: none;
 }
 
 .subscribe {
@@ -240,7 +285,8 @@ h4 {
   background-image: -webkit-linear-gradient(
     90deg,
     rgba(252, 227, 138, 0.651) 0%,
-    rgba(243, 129, 129, 0.651) 100%);
+    rgba(243, 129, 129, 0.651) 100%
+  );
   position: absolute;
   border-left: 10px;
   opacity: 0;
@@ -255,25 +301,48 @@ h4 {
 .card-img-team:hover {
   transform: translate(-10px, -10px);
   box-shadow: 10px 10px 0px 0px #95e1d3;
+
+}
+
+.card-img-team:hover .overlay-icon{
+width: 56px;
+height: 56px;
 }
 
 .overlay .overlay-icon:hover {
   background-color: #1abc9c;
   opacity: 1;
-}
-.overlay-icons {
-  display: flex;
-}
-.overlay-icon {
-  display: flex;
-  background-color: #fce38a;
-  cursor: pointer;
-  margin: 0.5px;
-  border: none;
-  border-color: transparent;
-  transition: all 200ms linear;
+
 }
 
+.overlay-icon {
+  background-color: #fce38a;
+
+  transition: all 200ms linear;
+  transition-delay: 0.3s;
+  /* width: 56px;
+  height: 56px; */
+  width: 0px;
+  height: 0px;
+}
 .overlay-link {
   text-decoration: none;
+}
+.soc-icon-01 {
+  background-image: url(img/soc-icon-01-facebook.png);
+}
+.soc-icon-02 {
+  background-image: url(img/soc-icon-02-twitter.png);
+}
+.soc-icon-03 {
+  background-image: url(img/soc-icon-03-pinterest.png);
+}
+.soc-icon-04 {
+  background-image: url(img/soc-icon-04-instagram.png);
+}
+img {
+  display: block;
+}
+input[type="email"]::-webkit-input-placeholder {
+  color: #cccccc;
 }
