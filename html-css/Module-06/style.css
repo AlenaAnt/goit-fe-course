@@ -270,7 +270,7 @@ section {
 }
 
 .subscribe {
-  background-color: #95e1d3;
+  background-color: #aee0d2;
   color: #ffffff;
   text-transform: uppercase;
   text-align: center;
@@ -284,9 +284,10 @@ section {
   height: 100%;
   background-image: -webkit-linear-gradient(
     90deg,
-    rgba(252, 227, 138, 0.651) 0%,
-    rgba(243, 129, 129, 0.651) 100%
+    rgba(245,226,142, 0.651) 0%,
+    rgba(217,128,128, 0.651) 100%
   );
+
   position: absolute;
   border-left: 10px;
   opacity: 0;
@@ -295,12 +296,49 @@ section {
   align-items: center;
 }
 
+
+
+
+
+
+
+
+
+
+.Rectangle_14 {
+  background-image: -moz-linear-gradient( 90deg, rgb(245,226,142) 0%, rgb(217,128,128) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(245,226,142) 0%, rgb(217,128,128) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(245,226,142) 0%, rgb(217,128,128) 100%);
+  position: absolute;
+  left: 350px;
+  top: 970px;
+  width: 380px;
+  height: 470px;
+  z-index: 19;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .card-img-team:hover .overlay {
   opacity: 1;
 }
 .card-img-team:hover {
   transform: translate(-10px, -10px);
-  box-shadow: 10px 10px 0px 0px #95e1d3;
+  box-shadow: 10px 10px 0px 0px #aee0d2;
 
 }
 
@@ -320,8 +358,6 @@ height: 56px;
 
   transition: all 200ms linear;
   transition-delay: 0.3s;
-  /* width: 56px;
-  height: 56px; */
   width: 0px;
   height: 0px;
 }

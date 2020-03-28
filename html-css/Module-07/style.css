@@ -145,20 +145,25 @@ section {
   font-size: 16px;
   color: #777777;
 }
-.card h3 {
+.card-01 h3,
+.card-02 h3,
+.card-03 h3 {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 900;
   font-size: 18px;
   color: #222222;
   margin-bottom: 20px;
+  padding-top: 25px;
 }
 .cards {
   display: flex;
   justify-content: space-between;
 
 }
-.card {
+.card-01,
+.card-02,
+.card-03 {
   font-family: "Roboto Slab";
   font-style: normal;
   font-weight: 400;
@@ -166,25 +171,73 @@ section {
   text-align: center;
   margin-right: 50px;
 }
-.card-img {
+
+
+.card-01::before {
+  content: "";
+  background-image: url(img/img-services01.png);
+  background-repeat: no-repeat;
+background-position: center;
+  top: 0;
+  left: 0;
+  width: 72px;
+  height: 71px;
   border-style: solid;
   border-width: 3px;
   border-color: rgb(254, 209, 54);
   border-radius: 50%;
-  width: 72px;
-  height: 71px;
-  display: block;
+
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.card img {
-  display: block;
-  width: 50px;
-  height: 50px;
+.card-02::before {
+  content: "";
+  background-image: url(img/img-services02.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 72px;
+  height: 71px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(254, 209, 54);
+  border-radius: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+.card-03::before {
+  content: "";
+  background-image: url(img/img-services03.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 72px;
+  height: 71px;
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(254, 209, 54);
+  border-radius: 50%;
+
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
 .contactus {
   background: #222222;
   background-image: url(img/Map-Image.png);
@@ -194,7 +247,7 @@ section {
 .head-contactus {
   text-align: center;
   margin-bottom: 75px;
-  padding-top: 110px;
+
 }
 
 .head-contactus h2 {
@@ -241,7 +294,7 @@ textarea {
   font-weight: 900;
   font-size: 14px;
   text-transform: uppercase;
-  color: #bbbbbb;
+  color: #000;
 }
 input[type="text"]::-webkit-input-placeholder,
 input[type="email"]::-webkit-input-placeholder,
@@ -270,12 +323,12 @@ input[type="submit"],
 textarea:focus {
   border-color: blue;
 }
-input:invalid,
-textarea:invalid {
+input:invalid:focus,
+textarea:invalid:focus {
   border-color: red;
 }
-input:valid,
-textarea:valid {
+input:valid:focus,
+textarea:valid:focus {
   border-color: green;
 }
 .btn-box {
