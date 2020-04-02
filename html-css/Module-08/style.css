@@ -89,6 +89,13 @@ header {
 .user-item {
   display: inline-block;
   vertical-align: middle;
+  border: none;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  color: #fff;
+  background: none;
 }
 
 .logo {
@@ -105,21 +112,16 @@ header {
 }
 
 .authorization {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 14px;
+
   margin-bottom: 115px;
 }
 
-.authorization a:hover {
-  /* border-radius: 20px; */
-
+.user-item:hover {
   border-color: rgb(255, 255, 255);
   background-color: rgba(26, 25, 21, 0);
 }
 
-.authorization a {
+.user-item {
   text-decoration: none;
   color: #ffffff;
   padding: 10px 20px;
@@ -177,16 +179,18 @@ header {
   font-weight: 900;
   font-size: 14px;
   color: #fff;
-  border-radius: 20px;
+  border-radius: 100px;
   padding: 15px;
   border-color: rgb(255, 78, 80);
   text-decoration: none;
   border-style: solid;
   border-width: 2px;
+  background-color: rgb(255, 78, 80);
 }
 
 .link:hover {
-  background-color: rgb(255, 78, 80);
+  background-color: #ffffff;
+  color: #ff4e50;
 }
 h3 {
   text-align: center;
@@ -205,8 +209,9 @@ h3 {
 .partner-card {
   margin-bottom: 20px;
   display: flex;
-  align-items: center;
+
   flex-direction: column;
+  align-items: flex-start;
 }
 .partner {
   margin-bottom: 30px;
@@ -241,14 +246,15 @@ h3 {
   font-style: normal;
   font-weight: 900;
   font-size: 14px;
-  color: #ff4e50;
-  border-radius: 20px;
+  color: #ffffff;
+  border-radius: 100px;
   padding: 15px;
   border-color: rgb(255, 78, 80);
   text-decoration: none;
   border-style: solid;
   border-width: 2px;
   display: block;
+  background-color: rgb(255, 78, 80);
 }
 
 .link-partner {
@@ -257,13 +263,22 @@ h3 {
 }
 
 .link-bottom:hover {
-  background-color: rgb(255, 78, 80);
-  color: #ffffff;
+
+
+  background-color: #ffffff;
+  color: #ff4e50;
 }
 
-.partner-icon::before {
-  width: 16px;
-  height: 16px;
+.partner-img {
+  position: relative;
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
+}
+
+.partner-icon {
+  width: 35px;
+  height: 35px;
   background-repeat: no-repeat;
   background-position: center;
   border-style: solid;
@@ -272,27 +287,26 @@ h3 {
   position: absolute;
   padding: 10px;
   border-radius: 50%;
-  display: flex;
-  right: 20%;
-  top: 35%;
+  bottom: 0;
+  right: 0;
 }
 
-.partner-icon-01::before {
+.partner-icon-01{
   content: "";
   background-image: url(img/partner-icon-01.png);
   background-color: rgb(255, 78, 80);
 }
-.partner-icon-02::before {
+.partner-icon-02{
   content: "";
   background-image: url(img/partner-icon-02.png);
   background-color: rgb(28, 215, 173);
 }
-.partner-icon-03::before {
+.partner-icon-03{
   content: "";
   background-image: url(img/partner-icon-03.png);
   background-color: rgb(255, 165, 7);
 }
-.partner-icon-04::before {
+.partner-icon-04{
   content: "";
   background-image: url(img/partner-icon-04.png);
   background-color: rgb(78, 115, 219);
