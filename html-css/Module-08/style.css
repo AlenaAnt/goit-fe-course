@@ -157,6 +157,7 @@ header {
   text-decoration: none;
   text-transform: uppercase;
   padding-bottom: 20px;
+  padding-top: 40px;
 }
 .content-head-span {
   font-family: "Roboto";
@@ -211,7 +212,7 @@ h3 {
   display: flex;
 
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .partner {
   margin-bottom: 30px;
@@ -359,6 +360,7 @@ h3 {
     flex-wrap: wrap;
     flex-direction: inherit;
     justify-content: center;
+    align-items: flex-start;
   }
 }
 
@@ -390,5 +392,6 @@ h3 {
 
   .partner-card {
     flex-wrap: nowrap;
+    align-items: flex-start;
   }
 }
