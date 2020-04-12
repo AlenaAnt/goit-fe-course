@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  li,
+  ul {
+    list-style: none;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container {
+    width: 1020px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+.nav-menu {
+
+}
+.nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 750px;
+    padding-left: 350px;
+}
+.nav-link:hover {
+    border: aquamarine;
+    border-style: solid;
+    border-radius: 10px;
+padding: 5px;
+    transform: scale(1.1) rotate(4deg);
+}
+.nav-link {
+    float: left;
+    font-family: 'Comic Neue', cursive;
+    font-size: 14px;
+    font-weight: 700;
+
+
+
+
+
+}
+.nav-link + .nav-link  {
+    margin-left: 20px;
+}
+
+.lot   {
+    font-family: 'Comic Neue', cursive;
+    font-size: 14px;
+    font-weight: 300;
+    width: 300px;
+    text-align: justify;
+    float: left;
+    margin: 20px;
+
+}
+.lot:nth-child(3n+3)
+{
+    margin-left: 0;
+}
+.lot h2 {
+    font-family: 'Comic Neue', cursive;
+    font-size: 24px;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+}
+.products {
+    overflow: hidden;
+}

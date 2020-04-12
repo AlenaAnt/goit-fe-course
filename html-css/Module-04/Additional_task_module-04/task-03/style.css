@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  li,
+  ul {
+    list-style: none;
+  }
+
+  .container {
+      width: 900px;
+      margin: 0 auto;
+      padding: 0 15px;
+  }
+  li::before {
+    content: "\2192";
+
+  }
+
+  li {
+    font-family: 'Anton', sans-serif;
+      font-size: 24px;
+      color: lawngreen;
+  }

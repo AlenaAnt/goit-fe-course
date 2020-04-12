@@ -1,0 +1,151 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.container {
+max-width: 300px;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 15px 0;
+  }
+
+  .user-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.logo {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .logo a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+.user-item:hover {
+  border-color: rgb(255, 255, 255);
+  background-color: rgba(26, 25, 21, 0);
+}
+
+.user-item {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-style: solid;
+  border-width: 2px;
+
+  border-radius: 25px;
+  border-color: transparent;
+}
+
+.authorization {
+
+    margin-bottom: 115px;
+  }
+  .content {
+    background-image: url(/html-css/Module-09/img/mobile/img-content-mobile.png);
+    background-color: rgb(26, 25, 21);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 540px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-head {
+    text-align: center;
+    padding-top: 80px;
+  }
+  .content-head h2 {
+    justify-content: space-between;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+  .content-head-span {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 0 25px;
+    display: inline-block;
+  }
+  .content-link {
+    padding-top: 20px;
+    width: 280px;
+    margin: 0 auto;
+  }
+  .link {
+    display: block;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    color: #fff;
+    border-radius: 100px;
+    padding: 15px;
+    border-color: rgb(255, 78, 80);
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    background-color: rgb(255, 78, 80);
+  }
+  .link:hover {
+    background-color: #ffffff;
+    color: #ff4e50;
+  }
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 530px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 940px;
+    }
+}
+@media (min-width: 1200px) {
+    .container
+}

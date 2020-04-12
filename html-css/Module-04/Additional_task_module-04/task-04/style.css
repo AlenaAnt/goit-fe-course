@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after
+ {
+    box-sizing: inherit;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  li,
+  ul {
+    list-style: none;
+  }
+
+  .container {
+      width: 900px;
+      margin: 0 auto;
+      padding: 0 15px;
+
+  }
+  .list ul {
+    counter-reset: romanumber;
+  }
+.list li {
+    font-family: 'Baloo Paaji 2', cursive;
+    font-size: 24px;
+    /* list-style-type: lower-roman; */
+
+    position: relative;
+    height: 50px;
+}
+.list li::before {
+    counter-increment:  romanumber;
+    content: counter(romanumber, upper-roman);
+    position: absolute;
+    right: 100%;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: lightseagreen;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
