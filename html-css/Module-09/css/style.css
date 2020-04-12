@@ -217,22 +217,22 @@ h3 {
 
 .partner-icon-01 {
   content: "";
-  background-image: url(/html-css/Module-09/img/partner-icon-01.png);
+  background-image: url(../img/partner-icon-01.png);
   background-color: rgb(255, 78, 80);
 }
 .partner-icon-02 {
   content: "";
-  background-image: url(/html-css/Module-09/img/partner-icon-02.png);
+  background-image: url(../img/partner-icon-02.png);
   background-color: rgb(28, 215, 173);
 }
 .partner-icon-03 {
   content: "";
-  background-image: url(/html-css/Module-09/img/partner-icon-03.png);
+  background-image: url(../img/partner-icon-03.png);
   background-color: rgb(255, 165, 7);
 }
 .partner-icon-04 {
   content: "";
-  background-image: url(/html-css/Module-09/img/partner-icon-04.png);
+  background-image: url(../img/partner-icon-04.png);
   background-color: rgb(78, 115, 219);
 }
 
