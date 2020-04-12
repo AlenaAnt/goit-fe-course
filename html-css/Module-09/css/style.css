@@ -17,7 +17,7 @@ html {
 max-width: 300px;
 }
 
-header {
+#header {
     position: absolute;
     top: 0;
     right: 0;
@@ -54,7 +54,7 @@ header {
   padding: 10px 20px;
   border-style: solid;
   border-width: 2px;
-
+  background-color: transparent;
   border-radius: 25px;
   border-color: transparent;
 }
@@ -100,12 +100,9 @@ header {
     color: #ffffff;
     padding: 0 25px;
     display: inline-block;
+    padding-bottom: 20px;
   }
-  .content-link {
-    padding-top: 20px;
-    width: 280px;
-    margin: 0 auto;
-  }
+
   .link {
     display: block;
     font-family: "Montserrat";
@@ -120,24 +117,139 @@ header {
     border-style: solid;
     border-width: 2px;
     background-color: rgb(255, 78, 80);
+    width: 280px;
+
+     margin: 0 auto;
   }
   .link:hover {
     background-color: #ffffff;
     color: #ff4e50;
   }
 
+  h3 {
+
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 22px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  .partners {
+    text-align: center;
+    padding-bottom: 57px;
+    padding-top: 70px;
+  }
+  .partner-card {
+    margin-bottom: 20px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+  }
+  .partner {
+    margin-bottom: 30px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    position: relative;
+  }
+  .partner h4 {
+    text-align: center;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    color: #333333;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .partner img {
+    border-radius: 100px;
+  }
+
+  .link-bottom {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 100px;
+    padding: 15px;
+    border-color: rgb(255, 78, 80);
+    text-decoration: none;
+    border-style: solid;
+    border-width: 2px;
+    display: block;
+    background-color: rgb(255, 78, 80);
+    width: 280px;
+   margin: 0 auto;
+
+  }
 
 
 
+  .link-bottom:hover {
+
+
+    background-color: #ffffff;
+    color: #ff4e50;
+
+  }
+
+  .partner-img {
+    position: relative;
+    width: 122px;
+    height: 122px;
+    margin: 0 auto;
+  }
+
+  .partner-icon {
+    width: 35px;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgb(255, 255, 255);
+    position: absolute;
+    padding: 10px;
+    border-radius: 50%;
+    bottom: 0;
+    right: 0;
+  }
+
+  .partner-icon-01{
+    content: "";
+    background-image: url(/html-css/Module-09/img/partner-icon-01.png);
+    background-color: rgb(255, 78, 80);
+  }
+  .partner-icon-02{
+    content: "";
+    background-image: url(/html-css/Module-09/img/partner-icon-02.png);
+    background-color: rgb(28, 215, 173);
+  }
+  .partner-icon-03{
+    content: "";
+    background-image: url(/html-css/Module-09/img/partner-icon-03.png);
+    background-color: rgb(255, 165, 7);
+  }
+  .partner-icon-04{
+    content: "";
+    background-image: url(/html-css/Module-09/img/partner-icon-04.png);
+    background-color: rgb(78, 115, 219);
+  }
 
 
 
-
-
-
-@media (min-width: 768px) {
+@media (min-width: 540px) {
     .container {
-        max-width: 530px;
+        max-width: 532px;
+    }
+    .content {
+        background-image: url(/html-css/Module-09/img/tablet/img-content-tablet.png);
+        height: 700px;
     }
 }
 
@@ -145,7 +257,7 @@ header {
     .container {
         max-width: 940px;
     }
-}
-@media (min-width: 1200px) {
-    .container
+    .content {
+        background-image: url(/html-css/Module-09/img/desktop/img-content-desktop.png);
+    }
 }
