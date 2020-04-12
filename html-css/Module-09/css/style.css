@@ -254,6 +254,9 @@ max-width: 300px;
         background-image: url(../img/desktop/img-content-desktop.png);
         height: 700px;
     }
+    .authorization {
+        margin-bottom: 0;
+    }
 }
 
 @media (min-width: 992px) {
