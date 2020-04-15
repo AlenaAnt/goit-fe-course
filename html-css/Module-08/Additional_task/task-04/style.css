@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    padding: 0 30px;
+  }
+  .container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+  }
+
+  li,
+  ol {
+    list-style: none;
+  }
+
+
+  @media (min-width: 480px) {
+.card-img {
+  background-image: url(../task-04/img/468.jpeg);
+  width: 480px;
+  height: 250px;
+}
+  }
+
+@media (min-width: 768px) {
+
+  .card-img {
+    background-image: url(../task-04/img/768.jpeg);
+    width: 680px;
+  height: 450px;
+  }
+}
+@media (min-width: 1200px) {
+
+  .card-img {
+    background-image: url(../task-04/img/1200.jpeg);
+    width: 880px;
+  height: 650px;
+  }
+
+}

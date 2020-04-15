@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    padding: 0 30px;
+  }
+  .container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+  }
+
+  li,
+  ol {
+    list-style: none;
+  }
+
+ form {
+display: flex;
+width: 300px;
+flex-wrap: wrap;
+margin: 0 auto;
+padding-top: 25px;
+
+  }
+input {
+width: 100%;
+margin-bottom: 20px;
+line-height: 45px;
+padding-left: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="submit"],
+textarea {
+
+  padding: 18px 20px;
+  margin-bottom: 25px;
+  line-height: 100%;
+  border: 1px solid rgb(204, 204, 204);
+  border-radius: 4px;
+  background: #fff;
+  width: 100%;
+
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+}
+input[type="submit"] {
+
+  height: 34px;
+  width: 100px;
+  margin: 10px auto;
+  padding: 0 10px;
+  background-color: var(--wr-dark-color);
+  box-shadow: var(--black-alfa2);
+  color: #eee;
+  display: block;
+  line-height: 50%;
+  text-transform: uppercase;
+  color: white;
+  background-color: red;
+  border: none;
+
+}
+textarea {
+  padding-left: 10px;
+}
+fieldset {
+  display: inline-block;
+  padding: 20px;
+}

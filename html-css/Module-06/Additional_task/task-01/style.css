@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  .wrapper {
+    overflow: hidden;
+    position: relative;
+    padding: 0 30px;
+  }
+  .container {
+    max-width: 1200px;
+
+    margin: 0 auto;
+  }
+
+  li,
+  ol {
+    list-style: none;
+  }
+
+  .card-block {
+      display: flex;
+      flex-wrap: wrap;
+padding-top: 30px;
+  }
+  .card {
+      width: 33.333%;
+      margin-bottom: 15px;
+  }

@@ -6,11 +6,8 @@
   .wrapper {
     overflow: hidden;
     position: relative;
-    background-image: url(../task-03/img/imggg.jpg);
-    background-position: center ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 800px;
+
+
   }
   .container {
     max-width: 1170px;
@@ -27,6 +24,18 @@
   a {
       text-decoration: none;
   }
+
+
+.content {
+  background-image: url(../task-03/img/img-c.jpg);
+    background-position: center ;
+    background-size: cover;
+    background-repeat: no-repeat;
+padding-bottom: 800px;
+
+
+}
+
 .menu  {
     display: flex;
     flex-direction: row;
@@ -34,19 +43,39 @@
 
 
 }
+
   .submenu
   {
       display: none;
-
+position: absolute;
+width: 200%;
+left: 50%;
+transform: translate(-50%, 0%);
+font-family: 'Pacifico', cursive;
+font-size: 14px;
+font-style: italic;
+text-transform: capitalize;
 
     }
+
+  .menu-item a {
+    color: firebrick;
+  }
+  .submenu-item a {
+    color: green;
+  }
     .menu-item {
         display: inline-block;
         border-radius: solid 2px;
         border-color: aqua;
-        background-color: bisque;
-        width: 150px;
+        background-color: gainsboro;
+
         text-align: center;
+        position: relative;
+        text-transform: uppercase;
+        font-family: 'Pacifico', cursive;
+        font-size: 16px;
+        font-family: 'Lexend Giga', sans-serif;
 
     }
   .menu-item:hover > .submenu
@@ -114,4 +143,4 @@
 
 .submenu-item {
   white-space: nowrap;
-} */ */ */
+} */
