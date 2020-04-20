@@ -29,12 +29,12 @@
 .content {
     display: flex;
     flex-wrap: nowrap;
-    margin: 0 auto;
+    margin: 0 -10px;
     justify-content: center;
 }
 
 .blue {
-   width: 56.1666%;   /* а по расчетам width: 56.1666%; */
+   width: 54.1666%;   /* а по расчетам width: 56.1666%; */
     background-color: blue;
     border: 2px solid black;
     padding-top: 150px;
