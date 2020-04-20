@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  #wrapper {
+    overflow: hidden;
+    position: relative;
+  }
+  li,
+  ol {
+    list-style: none;
+  }
+  a:active,
+  a:hover,
+  a {
+    text-decoration: none;
+
+  }
+  .container {
+    max-width: 940px;
+    margin: 0 auto;
+  }
+nav {
+    min-height: 100vh;
+    background-image: url(../img/menu.jpg);
+    display: flex;
+}
+  .homework {
+text-transform: uppercase;
+font-family: 'Pacifico', cursive;
+font-size: 16px;
+display: inline-block;
+position: relative;
+
+  }
+
+.menu  {
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    padding-left: 50px;
+
+
+
+
+}
+.menu a {
+    color: teal;
+}
+.sub-menu {
+    text-transform: capitalize;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 14px;
+display: none;
+position: absolute;
+right: 0%;
+transform: translate(100%, -30%);
+background-color: turquoise;
+
+}
+.homework:hover > .sub-menu {
+display: block;
+
+}
