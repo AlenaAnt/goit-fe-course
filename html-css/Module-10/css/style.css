@@ -23,7 +23,7 @@ li{
 
   src: local("Montserrat Regular"), local("Montserrat-Regular"),
     url("../fonts/Montserrat/Montserrat-Regular.ttf")
-   format("ttf"),
+   format("truetype");
 
 }
 @font-face {
@@ -32,7 +32,7 @@ li{
 
   src: local("Montserrat Bold"), local("Montserrat-Bold"),
     url("../fonts/Montserrat/Montserrat-Bold.ttf")
-  format("ttf"),
+  format("truetype");
 
 }
 @font-face {
@@ -41,7 +41,7 @@ li{
 
   src: local("Kaushan Script"), local("Kaushan Script"),
     url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf")
-  format("ttf"),
+  format("truetype");
 
 }
 @font-face {
@@ -50,7 +50,7 @@ li{
 
   src: local("Roboto"), local("Roboto"),
     url("../fonts/Roboto/Roboto-Regular.ttf")
-  format("ttf"),
+  format("truetype");
 
 }
 @font-face {
@@ -60,7 +60,7 @@ li{
 
   src: local("Roboto Light"), local("Roboto Light"),
     url("../fonts/Roboto/Roboto-LightItalic.ttf")
-  format("ttf"),
+  format("truetype");
 
 }
 .wrapper {
@@ -370,6 +370,7 @@ font-family: "Montserrat";
   font-weight: 400;
   font-size: 14px;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .team-card__title{
@@ -497,7 +498,7 @@ fill: #ffffff;
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .banner {
-      background: url(img/banner/banner@2x.jpg) no-repeat;
+      background: url(../img/banner/banner@2x.jpg) no-repeat;
   }
 }
 .header {
