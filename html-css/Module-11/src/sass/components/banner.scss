@@ -1,0 +1,93 @@
+.banner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/banner/banner.jpg);
+    text-align: center;
+    z-index: -1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 45px;
+    &::before {
+        content: "";
+        position: absolute;
+        background: -webkit-gradient(linear, left top, right top, from(rgba(252,227,138,0.9)), to(rgba(243,129,129,0.9)));
+        background: -o-linear-gradient(left, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+        background: linear-gradient(90deg, rgba(252,227,138,0.9) 0%, rgba(243,129,129,0.9) 100%);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        z-index: -1;
+        }
+
+    }
+
+
+    .title {
+    text-align: center;
+
+    margin-bottom: 110px;
+
+    }
+    .title__head {
+        font-family: "Kaushan Script";
+    font-weight: 400;
+
+
+        }
+
+
+        .title__head--white {
+            color: $primery-white-color;
+            font-size: 72px;
+
+            margin-top: 230px;
+    }
+
+    .title__text  {
+    font-family: $montserrat;
+
+    text-transform: uppercase;
+
+      font-weight: 900;
+      &--white {
+        color: $primery-white-color;
+        font-size: 150px;
+        margin-bottom: 125px;
+        }
+
+    }
+
+
+    .btn {
+        display: inline-block;
+        font-family: $montserrat;
+        border: none;
+        font-weight: 900;
+        font-size: 14px;
+        color: $primery-white-color;
+        text-decoration: none;
+        outline: none;
+        text-transform: uppercase;
+        }
+
+
+        .banner__btn {
+            border: 3px solid rgb(255, 255, 255);
+            background-color: rgba(0, 0, 0, 0);
+            background: transparent;
+            width: 164px;
+            height: 44px;
+
+
+            &--indent {
+                margin-bottom: 230px;
+                }
+
+            }

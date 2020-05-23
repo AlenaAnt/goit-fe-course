@@ -427,6 +427,11 @@ outline: none;
 color: #cccccc;
 
 }
+.subscribe__btn {
+  background-color: #95e1d3;
+  width: 150px;
+  height: 40px;
+  }
 .team-card__img {
 -webkit-transition: 500ms linear ;
 -o-transition: 500ms linear ;
@@ -498,7 +503,8 @@ fill: #ffffff;
 
 @media (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   .banner {
-      background: url(../img/banner/banner@2x.jpg) no-repeat;
+    background-image: url(../img/banner/banner@2x.jpg) ;
+    background-repeat: no-repeat;
   }
 }
 .header {

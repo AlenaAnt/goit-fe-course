@@ -1,0 +1,62 @@
+
+    .list {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+
+        }
+
+        .list__item {
+            @include text;
+        text-align: left;
+        width: 380px;
+        position: relative;
+        padding-left: 84px;
+        margin-bottom: 100px;
+        &::before {
+            @extend %icon;
+            top: 0;
+            left: 42px;
+            width: 35px;
+            height: 32px;
+            }
+
+
+        &--icon-01::before
+        {
+        background-image: url(../images/icon/icon-01.svg);
+        }
+        &--icon-02::before{
+        background-image: url(../images/icon/icon-02.svg);
+        }
+        &--icon-03::before{
+        background-image: url(../images/icon/icon-03.svg);
+        }
+        &--icon-04::before{
+        background-image: url(../images/icon/icon-04.svg);
+        }
+        &--icon-05::before{
+        background-image: url(../images/icon/icon-05.svg);
+        }
+        &--icon-06::before{
+        background-image: url(../images/icon/icon-06.svg);
+        }
+
+        }
+
+        .list__head {
+        font-size: 14px;
+        text-transform: uppercase;
+        color: $primery-dark-color;
+        font-family: $montserrat;
+          font-style: normal;
+          font-weight: 400;
+          margin-bottom: 20px;
+
+
+        }

@@ -1,0 +1,78 @@
+.header__logo {
+    font-family: $montserrat;
+    font-weight: 900;
+    font-size: 30px;
+    color: $primery-white-color;
+    width: 40%;
+  }
+  .nav {
+  font-family: $montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: $primery-white-color;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 52%;
+
+  }
+  .nav__item{
+  position: relative;
+
+  &:hover {
+    color: $hover-color;
+
+    padding-bottom: 13px;
+
+
+    }
+    &:hover::after{
+    width: 100%;
+
+    }
+    &::after {
+    content: "";
+    display: block;
+    height: 3px;
+    background-color: $hover-color;
+    position: absolute;
+    bottom: 0;
+    }
+
+  }
+
+
+  .wrapper__basket {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 8%;
+  & a{
+    width: 18px;
+    height: 18px;
+    }
+
+  }
+  a {
+  text-decoration: none;
+  color: inherit;
+  }
+  .wrapper__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+  -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+        align-items: baseline;
+  }

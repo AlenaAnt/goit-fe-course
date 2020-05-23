@@ -1,0 +1,10 @@
+ @mixin text ($f-f: 'Roboto', $f-w: 400,
+ $f-s: 15px, $c-r: #999999) {
+
+    font-family: $f-f;
+    font-weight: $f-w;
+    font-size: $f-s;
+    color: $c-r;
+
+
+}

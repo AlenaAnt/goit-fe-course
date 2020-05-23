@@ -1,0 +1,19 @@
+/*
+ * Все паршалы импортировать в этот файл
+ */
+
+@import 'normalize.scss';
+@import 'helpers/variables.scss';
+@import 'helpers/placeholders.scss';
+@import 'helpers/mixins.scss';
+@import 'base.scss';
+@import 'fonts.scss';
+@import 'components/container.scss';
+@import 'components/header.scss';
+@import 'components/banner.scss';
+@import 'components/services.scss';
+@import 'components/services_list.scss';
+@import 'components/team_about.scss';
+@import 'components/team_block.scss';
+@import 'components/team-card.scss';
+@import 'components/footer.scss';

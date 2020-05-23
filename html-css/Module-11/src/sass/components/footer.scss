@@ -1,0 +1,54 @@
+.footer {
+    border-top: 1px solid #e5e5e5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-top: 10px;
+    }
+    .copyright {
+    display: inline-block;
+    font-family: $montserrat;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    &__word{
+      color: #f38181;
+      }
+    }
+
+
+    .subscribe{
+
+    display: -webkit-box;
+
+    display: -ms-flexbox;
+
+    display: flex;
+    text-align: right;
+    height: 40px;
+      width: 380px;
+      &__email{
+        width: 230px;
+        height: 40px;
+        padding-left: 15px;
+        font-family: 'Roboto Light"', sans-serif;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 15px;
+        outline: none;
+        color: #cccccc;
+
+        }
+        &__btn {
+          background-color: $mint-color;
+          width: 150px;
+          height: 40px;
+          }
+    }
